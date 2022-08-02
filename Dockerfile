@@ -1,11 +1,11 @@
 FROM tomcat:9.0
 
-COPY server.xml /usr/local/tomcat/conf/
-COPY catalina.policy /usr/local/tomcat/conf/
+#COPY server.xml /usr/local/tomcat/conf/
+#COPY catalina.policy /usr/local/tomcat/conf/
 COPY sample.war /usr/local/tomcat/webapps/ROOT.war
-COPY telemetri.json /usr/local/tomcat/
-COPY license.bin /usr/local/tomcat/
-COPY netstat /usr/bin/netstat
+#COPY telemetri.json /usr/local/tomcat/
+#COPY license.bin /usr/local/tomcat/
+#COPY netstat /usr/bin/netstat
 
 ADD lib /usr/local/lib
 ADD keys /usr/local/tomcat/keystore
