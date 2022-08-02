@@ -7,8 +7,8 @@ COPY sample.war /usr/local/tomcat/webapps/ROOT.war
 #COPY license.bin /usr/local/tomcat/
 #COPY netstat /usr/bin/netstat
 
-ADD lib /usr/local/lib
-ADD keys /usr/local/tomcat/keystore
+#ADD lib /usr/local/lib
+#ADD keys /usr/local/tomcat/keystore
 
 USER root
 RUN useradd -rm tomcat
