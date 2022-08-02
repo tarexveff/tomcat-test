@@ -12,7 +12,7 @@ COPY sample.war /usr/local/tomcat/webapps/ROOT.war
 
 USER root
 RUN useradd -rm tomcat
-RUN mkdir -p /usr/local/tomcat/webapps/ROOT
+#RUN mkdir -p /usr/local/tomcat/webapps/ROOT
 RUN mkdir -p /uploads/updates
 RUN mkdir -p /uploads/reports
 RUN chown -R $(id tomcat -u):$(id tomcat -g) /usr/local/tomcat && chmod -R a+rwx /usr/local/tomcat
